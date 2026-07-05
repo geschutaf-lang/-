@@ -10,6 +10,10 @@ from __future__ import annotations
 
 import argparse
 import os
+import sys
+
+# src 패키지를 확실히 import 하도록 저장소 루트를 경로에 추가
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import pandas as pd
 import yaml
